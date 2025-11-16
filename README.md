@@ -15,165 +15,81 @@ Interactive data structure visualization website built with HTML, CSS, JavaScrip
 <br>
 
 ## 🧩 Features
-- 🪄 **Interactive Cards** – Click, drag, flip, and delete cards naturally on your desktop
-- 🃏 **Spread & Stack** – Instantly pile cards together or reveal them all
-- ✨ **Star Effect** – Beautiful particle animation when a card disappears  
-- 🌊 **Wave Motion** – Hover the mouse to make the card group ripple dynamically  
-- 🎲 **Smart Deck Spawn** – Spawn cards in a random or specific order
-- 📃 **Card Listing** – Show all the cards of the same suit or value
-- ⌨️ **Keyboard Shortcuts** – Quickly access all features during live magic performances
+- Interactive Visualizations – Each data structure and algorithm is demonstrated with clear, animated graphics using p5.js.
+- Modular Pages – The website is organized into four main categories: basic structures, searching, sorting, and trees.
+- Hands-On Demonstrations – Users can interact with operations such as enqueue/dequeue, push/pop, or watch step-by-step sorting animations.
+- Algorithm Step Animation – Sorting and searching algorithms display each step in motion to show what happens behind the scenes.
+- Clean and Simple UI – Designed with separate pages and clear navigation, making each concept easy to explore independently.
+- GitHub Pages Deployment – Fully accessible online with no installation required.
 
 <br>
 
 ## 📂 Project Structure  
 ```
-Desktop Card/
-├── image/
-│   ├── button/           # Button graphics
-│   ├── card/             # Card and box graphics
-│   └── showcase.gif      # Demonstration gif
-├── card.py               # Window and classes  (Drag, Box, Group, Card)
-├── card_button.py        # Launch button
-├── LICENSE               # MIT license
-└── README.md             # Project documentation
+Data Structure/
+│
+├── index.html                 # Homepage with four main categories
+│
+├── basic/                     # Basic data structures
+│   ├── index.html
+│   ├── array.html
+│   ├── stack.html
+│   ├── queue.html
+│   └── linkedlist.html
+│
+├── searching/                 # Searching algorithms
+│   ├── index.html
+│   ├── linear.html
+│   ├── binary.html
+│   ├── jump.html
+│   ├── interpolation.html
+│   └── exponential.html
+│
+├── sorting/                   # Sorting algorithms
+│   ├── index.html
+│   ├── bubble.html
+│   ├── selection.html
+│   ├── insertion.html
+│   ├── merge.html
+│   ├── quick.html
+│   └── heap.html
+│
+├── tree/                      # Tree & graph structures
+│   ├── index.html
+│   ├── binary.html
+│   ├── bst.html
+│   ├── heap.html
+│   └── traversal.html
+│
+├── css/                       # Shared CSS files
+│   └── style.css
+│
+├── js/                        # Shared JavaScript files
+│   ├── p5.min.js
+│   └── common.js
+│
+└── image/                     # Images, GIFs, and showcases
+    └── showcase.gif
 ```
 
 <br>
 
-## ⚙️ Requirements
-Install dependencies before running:
-```bash
-pip install pillow
-```
-
-<br>
-
-## ▶️ How to Run
-1. Make sure the folder /image/card contains **54 card faces**, one **back image**, and one **box image**.
-2. Make sure the folder /image/button contains the **three** button states (gray, orange, and white).
-3. Launch the program:
-   ```bash
-   python card_button.py
-   ```
-4. Click the spade-shaped button at at the bottom left to toggle the main card window. 
+## ▶️ How to Play
+1. Go to the website: [https://benjikuo.github.io/Data-structure-visualization/](https://benjikuo.github.io/Data-structure-visualization/)
+2. Try to interect with the data structure.
 
 <br>
 
 ## 💻 Keyboard and Mouse Controls
-### [Keyboard]
-**Basic Operations:**
-| Key | Action |
-|-----|--------|
-| `E`        | Spawn a card |
-| `R`        | Reset box position |
-| `D`        | Delete a card |
-| `F`        | Flip a card |
-| `Ctrl + E` | Stack the card group |
-| `Ctrl + R` | Close the window |
-| `Ctrl + D` | Delete the card group |
-| `Ctrl + F` | Flip the card group |
-| `Ctrl + shift + D` | Delete all cards |
-| `Ctrl + shift + F` | Flip all cards |
 
 <br>
 
-**Create a Card Spread:**
-| Key | Action |
-|-----|--------|
-| `W`         | Spawn an **unstored** card spread with all cards |
-| `S`         | Spawn a **stored** card spread with all cards |
-| `Z`         | Spawn a stored card spread with all **spade** cards |
-| `X`         | Spawn a stored card spread with all **diamond** cards |
-| `C`         | Spawn a stored card spread with all **club** cards |
-| `V`         | Spawn a stored card spread with all **heart** cards |
-| `G`         | Spawn a stored card spread with all **red** cards |
-| `B`         | Spawn a stored card spread with all **black** cards |
-
-*(**+Ctrl:** delete used cards, **+Shift:** face-up)*
-
-<br>
-
-**Create a Magic Stack:**
-| Key | Action |
-|-----|--------|
-| `Ctrl + 1` | Spawn a **Si Stebbins** stack |
-| `Ctrl + 2` | Spawn a **Eight Kings** stack |
-| `Ctrl + 3` | Spawn a **color mirror** stack |
-| `Ctrl + 4` | Spawn a **number mirror** stack |
-| `Ctrl + Q` | Spawn a **color and number mirror** stack |
-
-*(**+Shift:** face-up)*
-
-<br>
-
-**Display Cards by Value:**
-| Key | Action |
-|-----|--------|
-| `0`   | Spawn four **10s** |
-| `1`   | Spawn four **Aces** |
-| `2–9` | Spawn four cards of the corresponding number |
-| `A`   | Spawn four **Aces** |
-| `J`   | Spawn four **Jacks** |
-| `Q`   | Spawn four **Queens** |
-| `K`   | Spawn four **Kings** |
-| `L`   | Spawn two **Jokers** |
-
-<br>
-
-**Secretly swapping cards:**
-| Key | Action |
-|-----|--------|
-| `Ctrl + A`         | Swap target become **target card** |
-| `Shift + A`        | No swap target |
-| `Ctrl + Shift + A` | Swap target become **Aces of Spade** |
-
-*(The **target card will face down**. The card swap occurred when another face-down card is **turned face up**.)*
-
-<br>
-
-**Spread for Magical Effect:**
-| Key | Action |
-|-----|--------|
-| `Shift + Q` | Span a randomly faced-up-or-down** spread with all cards. |
-
-*(The **last card** will always **face up**. Press Ctrl + Shift + F to secretly invert the face-down cards in **stack**.)*
-
----
-
-### [Mouse]
-**Drag:**  
-Right-click and drag to move an item.
-
-<br>
-
-**Click:**
-| button \ item | Card                 | Spread Bar                  | Box |
-|---------------|----------------------|-----------------------------|-----|
-| left          | Flip a card          | Flip cards in card spread   | Spawn a card |
-| middle        | Delete a card        | Delete cards in card spread | Reset box position |
-| right         | Spawn four of a kind | Stack cards in card spread  | Spawn a card spread |
-
-<br>
-
-## 📋 Class Overview
-**Drag** (base draggable class)  
- ├── **Box** (controls card spawning)  
- ├── **Group** (manages card groups)  
- └── **Card** (handles card behaviors)  
-
-<br>
-
-## 💡 Tips for Magicians
-- Use the card spread to let the spectator pick a random card.
-- Keep the cards visible on screen to help magician remember the spectator’s card or your prediction.
-- Through the stack system, the magician can identify the spectator’s card or determine its position in the deck.
-- Using a secret card-swap method, the magician ensures the spectator always chooses the target card.
-- Make the card in the stack face the same direction secretly using the assigned hotkey.
+## 📋 Page Overview
 
 <br>
 
 ## 📜 License
-This project is released under the **MIT License**.  
-You are free to modify and use it for learning, personal, or performance purposes.  
+This project is released under the MIT License.
+You are free to use, modify, and share it for learning or personal projects.
 
-**Making this program work felt like a miracle to me — now it’s your turn to make the magic happen.**
+**This is the sentence which will be added after I finished the project.**
