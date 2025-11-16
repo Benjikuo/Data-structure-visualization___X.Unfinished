@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Queue & Stack Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>simple data structure</h1>
+  
+  <h2>Queue</h2>
+  <div id="queue-controls">
+    <button onclick="enqueue()">Enqueue</button>
+    <button onclick="dequeue()">Dequeue</button>
+  </div>
+
+  <h2>Stack</h2>
+  <div id="stack-controls">
+    <button onclick="pushStack()">Push</button>
+    <button onclick="popStack()">Pop</button>
+  </div>
+
+  <div id="sketch-holder"></div>
+
+  <script src="p5.min.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>

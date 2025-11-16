@@ -1,0 +1,53 @@
+Home
+│
+├── 1. Basic Data Structures
+│   ├── Array
+│   ├── Stack
+│   ├── Queue
+│   └── Linked List
+│
+├── 2. Searching Algorithms
+│   ├── Linear Search
+│   └── Binary Search
+│
+├── 3. Sorting Algorithms
+│   ├── Bubble
+│   ├── Selection
+│   ├── Insertion
+│   ├── Merge
+│   ├── Quick
+│   └── Heap (optional)
+│
+├── 4. Tree & Graph
+│   ├── Binary Tree
+│   ├── BST
+│   ├── Heap
+│   ├── Tree Traversal
+│   └── Graph (optional)
+│
+├── 5. Complexity (optional)
+│
+├── 6. Resources (optional)
+│
+└── 7. About
+
+
+未來增加方向：
+2. Searching Algorithms
+│
+├── 2.1 Linear Search
+├── 2.2 Binary Search
+│
+├── 2.3 Jump Search             (optional)
+├── 2.4 Interpolation Search    (optional)
+├── 2.5 Exponential Search      (optional)
+│
+├── 2.6 Search Efficiency（比較動畫）
+│      ├── 時間複雜度比較
+│      ├── highlight 次數比較動畫
+│      └── 未排序 vs 已排序資料的效果差異
+│
+└── 2.7 Search in Data Structures（應用搜尋）
+       ├── Linked List
+       ├── BST
+       └── Hash Table（可加入 collision 動畫）
